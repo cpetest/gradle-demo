@@ -1,6 +1,8 @@
 buildscript {
 	repositories {
-		mavenCentral()
+		maven{
+		    url 'http://wlg1.artifactory.cd-cloud-artifact.tools.huawei.com/artifactory/sz-maven-public/'
+		}
 	}
 	dependencies{
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.2.RELEASE")
@@ -21,7 +23,9 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-	mavenCentral()
+		maven{
+		    url 'http://wlg1.artifactory.cd-cloud-artifact.tools.huawei.com/artifactory/sz-maven-public/'
+		}
 }
 
 dependencies {

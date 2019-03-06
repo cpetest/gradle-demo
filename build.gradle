@@ -1,8 +1,6 @@
 buildscript {
 	repositories {
-		maven{
-		    url 'https://100.125.5.235:443/nexus/content/groups/public'
-		}
+		mavenCentral()
 	}
 	dependencies{
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.2.RELEASE")
@@ -23,9 +21,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-		maven{
-		    url 'https://100.125.5.235:443/nexus/content/groups/public'
-		}
+	mavenCentral()
 }
 
 dependencies {

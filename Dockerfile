@@ -1,4 +1,4 @@
-FROM openjdk:8u181-jdk-alpine
+FROM 100.79.1.215:20202/op_svc_servicestage/openjdk:8-slim-int
 
 WORKDIR /home/apps/
 
